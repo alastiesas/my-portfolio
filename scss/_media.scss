@@ -6,7 +6,7 @@
     .header-content {
       padding-top: 5rem;
     }
-  }
+  }    
 }
 
 // Smartphones
@@ -131,6 +131,14 @@
       padding: 1rem;
       height: 5rem;
     }
+  }
+}
+
+// Large Tablet
+@media(max-height: 1300px) {
+  #contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 300px;
   }
 }
 
