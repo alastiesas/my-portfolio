@@ -24,7 +24,7 @@
     &-home {
       height: 10rem;
       border-bottom: 3px solid $main-color;
-      background-position: 20% 30%;
+      background-position: 20% 5%;
 
       .header-content {
         display: none;
@@ -33,6 +33,7 @@
 
     &-inner {
       height: 10rem;
+      background-position: 20% 5%;
     }
   }
 
@@ -81,7 +82,9 @@
     }
 
     &-c {
-      display: none
+      .about-labels {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   }
 
@@ -138,6 +141,14 @@
       padding-top: 3rem;
     }
   }
+
+  #about {
+    &-c {
+      .about-labels {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+  }
 }
 
 @media(max-height: 330px) {
@@ -145,6 +156,14 @@
     .header-content {
       h1 {
         font-size: 2rem;
+      }
+    }
+  }
+
+  #about {
+    &-c {
+      .about-labels {
+        grid-template-columns: repeat(4, 1fr);
       }
     }
   }
