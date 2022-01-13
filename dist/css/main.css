@@ -212,7 +212,7 @@ img {
       border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center 45%/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -331,12 +331,19 @@ img {
     text-align: center;
     background: #ffbc00; }
 
-#about-c .about-logos {
+#about-c .about-labels {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
-  #about-c .about-logos img {
-    width: 70%; }
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(5px, auto); }
+  #about-c .about-labels .label {
+    color: black;
+    background-color: #E0E1E6;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    justify-content: center; }
+  #about-c .about-labels p {
+    text-align: center; }
 
 #about-d .testimonials {
   display: grid;
