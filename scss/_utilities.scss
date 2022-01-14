@@ -118,3 +118,28 @@ input[class^='btn-']:hover {
   display: block;
   margin: 0 auto 1rem;
 }
+
+// Triangle
+.custom-shape-divider-top-1642125375 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1642125375 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1642125375 .shape-fill-light {
+  fill: $light-color;
+}
+
+.custom-shape-divider-top-1642125375 .shape-fill-dark {
+  fill: $dark-color;
+}

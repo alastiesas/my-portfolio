@@ -275,7 +275,7 @@ img {
         background-color: #E0E1E6;
         border: 1px solid $medium-color;
         padding: 0.4rem 0.6rem;
-        border-radius: 15px;
+        border-radius: 25px;
         justify-content: center;
       }
       
@@ -287,6 +287,8 @@ img {
 
   // About D
   &-d {
+    padding-top: 1.5rem;
+    
     .testimonials {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
