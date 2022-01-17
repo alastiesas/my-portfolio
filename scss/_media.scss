@@ -9,6 +9,19 @@
   }    
 }
 
+// Small Tablets
+@media(max-width: 750px) {
+  // About
+  #about {   
+    &-c {
+      .about-labels {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }  
+}
+
+
 // Smartphones
 @media(max-width: 500px) {
   #main-nav {
@@ -167,6 +180,15 @@
 
     &-inner {
       height: 20rem;
+    }
+  }
+
+  // About
+  #about {
+     &-c {
+      .about-labels {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 }
