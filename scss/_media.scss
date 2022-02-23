@@ -26,12 +26,19 @@
 @media(max-width: 500px) {
   #main-nav {
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row;     
     align-items: center;
     justify-content: space-around;
 
-    li {
-      padding: 0.5rem;     
+    .flexContainerBox {
+      flex: 1 1 auto;
+      justify-content: right;
+    }
+
+    .index {      
+      li {
+        padding: 1.2rem;   
+      }
     }
 
     .focus {
@@ -159,12 +166,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;   
 
     .index {
       display: flex;
       flex-direction: column;
       text-align: center;
+
+      li {
+        padding: 1rem;
+      }
     }
     
   }
@@ -230,7 +241,7 @@
   #about {
     &-c {
       .about-labels {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

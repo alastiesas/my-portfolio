@@ -247,13 +247,15 @@ img {
       #main-nav .language a li {
         display: block;
         height: 30px;
+        width: 30px;
         padding: 1rem 0; }
         #main-nav .language a li:hover {
           background-color: transparent;
           border-top: 1px solid transparent; }
       #main-nav .language a img {
         margin: 2px;
-        max-height: 26px; }
+        max-height: 26px;
+        max-width: 26px; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center 45%/cover;
@@ -394,7 +396,7 @@ img {
   padding-top: 1.5rem; }
   #about-d .testimonials {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.5rem; }
     #about-d .testimonials ul {
       list-style: none;
@@ -481,8 +483,11 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-around; }
-    #main-nav li {
-      padding: 0.5rem; }
+    #main-nav .flexContainerBox {
+      flex: 1 1 auto;
+      justify-content: right; }
+    #main-nav .index li {
+      padding: 1.2rem; }
     #main-nav .focus {
       order: 4; }
   #header-home {
@@ -542,6 +547,8 @@ img {
       display: flex;
       flex-direction: column;
       text-align: center; }
+      #main-nav .index li {
+        padding: 1rem; }
   #logo {
     display: none; }
   #header-home {
@@ -566,4 +573,4 @@ img {
   #header-home .header-content h1 {
     font-size: 2rem; }
   #about-c .about-labels {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }

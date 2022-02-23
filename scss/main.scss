@@ -91,6 +91,7 @@ img {
       li {
         display: block;
         height: 30px;
+        width: 30px;
         padding: 1rem 0;  
         
         &:hover {
@@ -102,6 +103,7 @@ img {
       img {
         margin: 2px;
         max-height: 26px;
+        max-width: 26px;
       }
     }    
   }
@@ -327,7 +329,7 @@ img {
     
     .testimonials {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 0.5rem;
 
       ul {
